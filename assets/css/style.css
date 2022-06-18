@@ -53,30 +53,6 @@ header nav ul li a {
   font-size: 1.5vw;
 }
 
-footer {
-  background: #fce138;
-  width: 100%;
-  padding: 40px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-footer h2 {
-  color: #024e76;
-  font-size: 30px;
-  margin: 0;
-}
-
-footer div {
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer a {
-  color: #024e76;
-}
-
 #test {
   display: flex;
   flex-direction: row;
@@ -285,9 +261,9 @@ section {
 .flex-row {
   display: flex;
 }
+/* TRAINER STYLES END */
 
 /*reach out section styling start */
-
 .contact {
   background: #024e76;
 }
@@ -296,17 +272,27 @@ section {
   color: #fce138;
 }
 
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
+.contact-info h3 {
+  color: #fce138;
+  font-size: 32px;
+}
+
 .contact-info iframe {
-  width: 400px;
   height: 400px;
 }
 
 .contact-info div {
-  width: 410px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  margin: 30px 0 0 60px;
   color: white;
 }
 
@@ -319,7 +305,7 @@ section {
 .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
 }
 
@@ -327,6 +313,59 @@ section {
   color: #fce138;
 }
 
-/*end of reach out styling - 
-MAKE SURE TO FIX THE ALIGNMENT ERROR - 
-HAS TO DO WITH THE DIV */
+.contact-form h3 {
+  font-size: 32px;
+  margin: 0;
+  color: #fce138;
+}
+
+.Contact-form-input,
+.contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.contact-form label {
+  margin: 0 5px;
+}
+
+.contact-form button {
+  color: #024e76;
+  background-color: #fce138;
+  border: none;
+  padding: 15px 0;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+/*start of footer styling*/
+footer {
+  background: #fce138;
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer h2 {
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: #024e76;
+}
